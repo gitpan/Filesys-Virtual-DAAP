@@ -5,10 +5,10 @@ WriteMakefile
           'NAME' => 'Filesys::Virtual::DAAP',
           'VERSION_FROM' => 'lib/Filesys/Virtual/DAAP.pm',
           'PREREQ_PM' => {
-                           'Test::More' => 0,
-                           'Filesys::Virtual' => 0,
-                           'Class::Accessor' => 0,
-                           'Net::DAAP::Client::Auth' => '0.12'
+                           'Class::Accessor' => '0',
+                           'Filesys::Virtual' => '0',
+                           'Net::DAAP::Client' => '0.4',
+                           'Test::More' => '0'
                          },
           'INSTALLDIRS' => 'site',
           'PL_FILES' => {}
