@@ -1,0 +1,22 @@
+--- #YAML:1.0
+name: Filesys-Virtual-DAAP
+version: 0.01
+author:
+  - Richard Clamp <richardc@unixbeard.net>
+abstract: present a DAAP share as a VFS
+license: perl
+requires:
+  Class::Accessor: 0
+  Filesys::Virtual: 0
+  Net::DAAP::Client::Auth: 0.12
+  perl: 5.006
+build_requires:
+  Test::More: 0
+provides:
+  Filesys::Virtual::DAAP:
+    file: lib/Filesys/Virtual/DAAP.pm
+    version: 0.01
+  Filesys::Virtual::DAAP::Song:
+    file: lib/Filesys/Virtual/DAAP.pm
+    version: 0.01
+generated_by: Module::Build version 0.24
