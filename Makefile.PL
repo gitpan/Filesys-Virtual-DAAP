@@ -2,15 +2,16 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+          'PL_FILES' => {},
+          'INSTALLDIRS' => 'site',
           'NAME' => 'Filesys::Virtual::DAAP',
           'VERSION_FROM' => 'lib/Filesys/Virtual/DAAP.pm',
           'PREREQ_PM' => {
-                           'Class::Accessor' => '0',
-                           'Filesys::Virtual' => '0',
+                           'Test::More' => 0,
                            'Net::DAAP::Client' => '0.4',
-                           'Test::More' => '0'
-                         },
-          'INSTALLDIRS' => 'site',
-          'PL_FILES' => {}
+                           'Filesys::Virtual::Plain' => 0,
+                           'Filesys::Virtual' => 0,
+                           'Class::Accessor' => 0
+                         }
         )
 ;

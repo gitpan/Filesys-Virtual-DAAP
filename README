@@ -1,4 +1,4 @@
-README for Filesys::Virtual::DAAP 0.02
+README for Filesys::Virtual::DAAP 0.04
 
 =head1 NAME
 
@@ -25,7 +25,8 @@ This module has external dependencies on the following modules:
 
  Class::Accessor
  Filesys::Virtual
- Net::DAAP::Client::Auth	0.12
+ Filesys::Virtual::Plain
+ Net::DAAP::Client	0.4
  perl	5.006
 
 =head1 INSTALLATION
@@ -43,16 +44,24 @@ What changed over the last 3 revisions
 
 =over
 
+=item 0.04	Tuesday 22nd March, 2005	
+
+	Filesys::Virtual plain has its own dist now, so needs a
+	seperate line in the Build.PL
+	Deleted the reference to rt.cpan.org as I don't want to use it anymore.
+
+
+=item 0.03   Monday 26th July, 2004
+
+	Depend on Net::DAAP::Client 0.4 so we can extend the SONG_ATTRIBUTES
+
+
 =item 0.02	Tuesday 18th May, 2004
 
 	docubug - it's Net::DAV::Server not Net::Server::DAV (doh)
 	Threw in some more gurards against invalid file paths.
 	Removed a stealth dependency on YAML.
 
-
-=item 0.01	Monday 17th May, 2004
-
-	Initial CPAN release
 =back
 
 =head1 AUTHOR
